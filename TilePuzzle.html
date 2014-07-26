@@ -1,0 +1,103 @@
+<!DOCTYPE PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+   <meta name="keywords" content="java,awt,puzzle,game">
+   <meta name="description" content="Simulates a sliding tile puzzle.">
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <link rel=stylesheet type="text/css" href="puzzle.css">
+   <title>Tile Puzzle (1.1)</title>
+  </head>
+  <body>
+	<div id="title-section"><h1><span>Tile Puzzle (1.1)</span></h1></div>
+      <div align="center" id="nav-section">
+      <h3 align="center">Not where you wanted to be ?</h3>
+<p>You can go to the site <a href="../index.html">home</a> or <br/>
+      <script language="javascript">
+
+function backTableLink() {
+	var ref = document.referrer;
+	if ( ref != null ) {
+		document.write("<a href='" + ref + "' title='Previous site'>back</a>");
+
+		document.write(' where you came from.');
+	}
+}
+backTableLink();
+</script>
+
+      </p>
+      </div>
+      
+	<div id="puzzle-section">
+	<applet archive=puzzle.jar code=TilePuzzle.class width=500 height=500>
+		<param name=img value="puzzle.jpg">
+		<param name=style value="ButtonStyle">
+		alt="Your browser understands the &lt;APPLET&gt; tag but isn't running the applet, for some reason."
+		Your browser is completely ignoring the &lt;APPLET&gt; tag!
+	</applet>
+	</div>
+
+    <hr/>
+    
+	<div id="description-section">
+	<div class="text">
+	This applet simulates a sliding tile puzzle you may recall from childhood :
+one tile has been removed to allow the others to be rearranged.
+	<br/>
+The code can also be run as an application.
+	</div>
+    <br/>
+
+	<div class="text">
+There is general information about the code design <a href="TilePuzzle_code.html">here</a>.
+	<br/>
+More information about the "solving" algorithm and its related code is <a href="TilePuzzle_solution.html">here</a>.
+	</div>
+	<br/>
+	<div class="text">
+      You can change the number of rows and columns in the puzzle by clicking on the "Resize" button and entering the new values. 
+	<ul>You can also choose the method used to show the tiles of the puzzle by clicking on the "Style" button 
+	<li>"Button" - makes each tile a Button
+	</li>
+	<li>"Drawn" - draws each tile using the Graphics functions
+	</li>
+	<li>"Image" - uses an Image from a file (by default, the file is puzzle.jpg and shows plants by my garage wall).
+      Note that choosing the Image style will cause the the image to be loaded, which could take a while.
+	</li>
+	</ul>
+	</div>
+	<br/>
+
+	<div class="text">
+      To try the puzzle, just click on any of the rectangular divisions or "tiles" within it. That tile will move to the position occupied by the blank tile. 
+      Rather than jumbling the puzzle manually you can choose to click on "Shuffle" which will rapidly move tiles at random and then display the resulting layout. 
+      Pressing "Shuffle" again will repeat the process.
+	<br/>
+	<ul> When the puzzle is not in its initial or "solved" state, you have the option to have the computer solve the puzzle for you.
+	<li>
+      Pressing "Reset" will immediately return the puzzle to its solved state without showing any intermediate moves. 
+	</li>
+	<li>
+      Pressing "Move" will cause a single tile to be moved each time it is pressed until the puzzle is completely solved. 
+	</li>
+	<li>
+      Pressing "Solve it" will move tiles using a timer until the puzzle is solved or the user clicks "Stop Solving" or "Reset". 
+      The rate at which tiles are moved can be varied by clicking on the "Speed" button and selecting the desired rate.
+	</li>
+	</ul>
+      One point worth making is that the automatic solution is not simply a reversal of the "Shuffle" process. 
+      To see this you can shuffle the puzzle manually and then use "Move" or "Solve it" to see just how effortlessly the <a href="TilePuzzle_solution.html">algorithm</a> copes. 
+      Sadly, you may as easily see just how stupid it can be too.
+	</div>
+	<br/>
+
+	<div class="text">
+      If you want to download all the source in one go, <a href="puzzle.zip">this</a> is a zipped set of the files. 
+      If you just want to use the applet in your own stuff but don't need to compile it yourself, <a href="puzzle.jar">this</a> is the compiled archive(jar) : to use your own image change the "img" parameter to refer to it (or rename your image to <code>puzzle.jpg</code>). 
+	</div>
+
+	</div>
+
+    <div id="legal-section">(c) 2002-2014 Nigel Whitley</div>
+  </body>
+</html>

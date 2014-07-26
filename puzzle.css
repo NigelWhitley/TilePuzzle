@@ -1,0 +1,171 @@
+body {
+	background: #bbffdd;
+	font-size: 100%; 
+	color: teal;
+	font-family: verdana, helvetica, arial, sans-serif;
+	padding: 0;
+	border-width: 0;
+	margin: 0.1em 0.5em ;
+}
+
+h1 {
+    color: teal;
+    font-size: 2em;
+    text-align: center;
+    margin: 0.3em 0;
+}
+
+h2 {
+    color: teal;
+    text-align:center;
+    font-size: 1.5em;
+    margin: 0.2em 0;
+}
+
+th {
+    font-size: 1.2em;
+}
+
+h3 {
+    color: seagreen;
+    text-align:left;
+    font-size: 1.2em;
+    margin: 0.5em 0 0 0;
+}
+
+h3 a:link{
+    color: teal;
+}
+
+h3 a:visited{
+    color: teal;
+}
+
+a:link,a:visited {
+    color: seagreen;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: yellow;
+    background: seagreen;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+h3 a:hover {
+    color: yellow;
+}
+
+a img {
+    border-width: 0;
+}
+
+tr {
+	font-size: 0.8em;
+}
+
+.hide {
+	visibility: hidden;
+}
+
+.centred_text {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.centred_table {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.emphasis {
+    font-weight: bold;
+}
+
+.variation {
+    font-style: italic;
+}
+
+#title-section {
+	margin-bottom: 1em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#title-section h1 span {
+	background: teal;
+	color: #eeffff;
+	font-size: 1em;
+	text-align: center;
+	padding: 0 1em;
+	border-style: none;
+	border-width: 1px;
+	margin: auto;
+	text-shadow: 0px 0px 4px rgba(208,255,255,0.6);
+}
+
+#legal-section {
+	position: fixed; 
+	bottom: 5px; 
+	right: 5px; 
+	left: 5px; 
+	text-align: center; 
+	font-size: 0.6em; 
+}
+
+#nav-section {
+	background: #eeffff;
+	text-align: center;
+	float: right;
+}
+
+#description-section {
+	font-size: 0.8em;
+	margin-bottom: 1.5em;
+}
+
+#description-section .text {
+	background: #eeffff;
+	text-align: left;
+}
+
+#description-section .text ul {
+	padding-left: 0;
+	list-style: disc inside none;
+}
+
+#description-section .text ul li {
+	padding-left : 2em;
+}
+
+.class_table {
+	border-collapse: collapse;
+	border-style: solid;
+	border-width: 1px;
+	border-color: teal;
+}
+
+.class_header_row {
+	border-style: solid;
+	border-width: 2px;
+	border-color: teal;
+}
+
+.class_table th {
+	border-width: 2px;
+	border-color: teal;
+	border-style: solid;
+}
+
+.class_table td {
+	border-width: 1px;
+	border-color: teal;
+	border-style: solid;
+}
+
+.solution_class {
+	width: 20%;
